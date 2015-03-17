@@ -1,0 +1,21 @@
+{
+  "name": "github-explorer",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Embeddable GitHub file explorer",
+  "author": "Andrew Duthie <andrew.duthie@automattic.com>",
+  "license": "GPLv2+",
+  "scripts": {
+    "build": "browserify js/src/index --extension=.jsx -t babelify -t [ envify --GITHUB_ACCESS_TOKEN $GITHUB_ACCESS_TOKEN ] -o js/app.js",
+    "dev": "watchify js/src/index --extension=.jsx -d -t babelify -t [ envify --GITHUB_ACCESS_TOKEN $GITHUB_ACCESS_TOKEN ] --verbose -o js/app.js"
+  },
+  "devDependencies": {
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "envify": "^3.4.0",
+    "lodash": "^3.5.0",
+    "react": "^0.13.1",
+    "superagent": "^1.1.0",
+    "watchify": "^2.4.0"
+  }
+}

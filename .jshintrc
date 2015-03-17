@@ -1,0 +1,10 @@
+{
+    "eqeqeq": true,
+    "unused": true,
+    "undef": true,
+    "browser": true,
+    "node": true,
+    "curly": true,
+    "expr": true,
+    "esnext": true
+}

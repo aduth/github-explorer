@@ -1,0 +1,8 @@
+# Compiled
+/js/app.js
+
+# Dependencies
+node_modules
+
+# Logs
+*.log
